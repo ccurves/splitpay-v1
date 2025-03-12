@@ -13,11 +13,11 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div className="max-w-lg mx-auto bg-white text-gray-500 p-6 rounded-lg shadow-md">
       <h1 className="text-xl font-bold mb-4">SplitPay: Group Bill Splitter</h1>
       <Link
         href="/create-bill"
-        className="bg-blue-500 text-white px-4 py-2 rounded mb-4 inline-block"
+        className="bg-orange-400 text-white px-4 py-2 rounded mb-4 inline-block"
       >
         ➕ Create a Bill
       </Link>

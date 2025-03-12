@@ -21,23 +21,23 @@ export default function CreateBill() {
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div className="max-w-lg mx-auto bg-white text-gray-500 p-6 rounded-lg shadow-md">
       <h2 className="text-xl font-bold mb-4">Create a New Bill</h2>
       <input
-        className="border p-2 w-full mb-2"
+        className="border p-2 w-full mb-2 placeholder:text-gray-400"
         placeholder="Bill Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
-        className="border p-2 w-full mb-2"
+        className="border p-2 w-full mb-2 placeholder:text-gray-400"
         placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
       />
       <button
         onClick={handleSubmit}
-        className="bg-blue-500 text-white px-4 py-2 rounded"
+        className="bg-orange-400 text-white px-4 py-2 rounded"
       >
         ✅ Save Bill
       </button>

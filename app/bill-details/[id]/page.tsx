@@ -29,12 +29,12 @@ export default function BillDetails() {
   if (!bill) return <p>Loading...</p>;
 
   return (
-    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div className="max-w-lg mx-auto bg-white text-gray-500 p-6 rounded-lg shadow-md">
       <h2 className="text-xl font-bold">{bill.title}</h2>
       <p>Amount: ${bill.amount}</p>
       <button
         onClick={sendReminder}
-        className="bg-red-500 text-white px-4 py-2 rounded"
+        className="bg-orange-400 text-white px-4 py-2 rounded"
       >
         🔔 Send Reminder
       </button>
