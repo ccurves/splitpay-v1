@@ -34,13 +34,13 @@ export default function BillDetails() {
       <p>Amount: ${bill.amount}</p>
       <button
         onClick={sendReminder}
-        className="bg-orange-400 text-white px-4 py-2 rounded"
+        className="bg-orange-400 text-white px-4 py-2 rounded hover:cursor-pointer"
       >
         🔔 Send Reminder
       </button>
       <button
         onClick={() => router.push("/")}
-        className="bg-gray-500 text-white px-4 py-2 rounded ml-2"
+        className="bg-gray-500 text-white px-4 py-2 rounded ml-2 hover:cursor-pointer"
       >
         🔙 Back
       </button>
